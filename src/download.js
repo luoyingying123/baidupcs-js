@@ -112,7 +112,7 @@ function main() {
         });
     }
     ranges.map((range) => {
-        promises_1.push(limit_1(() => connection(range)));
+        promises_1.push(limit_1(() => connect(range)));
         promises_2.push(limit_2(() => merge(range)));
     });
     console.log('working');
