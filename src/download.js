@@ -12,7 +12,7 @@ const bytes = 274938065; //文件大小
 const chunkSize = 1024 * 1024; //分块下载的大小
 const file = './a.bin'; //文件路径
 
-const limit_1 = pLimit(host.length);
+const limit_1 = pLimit(host.length * 2);
 const limit_2 = pLimit(1);
 
 let ranges = [];
