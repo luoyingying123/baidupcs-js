@@ -55,7 +55,7 @@ function connect(range) {
         oper.attempt((c) => {
             const config = {
                 method: 'GET',
-                url: (urls[(range / chunkSize) % host.length]),
+                url: (urls[(range / chunkSize) % urls.length]),
                 headers: {
                     'User-Agent': '',
                     'Connection': 'Keep-Alive',
